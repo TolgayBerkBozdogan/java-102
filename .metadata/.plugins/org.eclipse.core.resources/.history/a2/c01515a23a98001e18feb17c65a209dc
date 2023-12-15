@@ -1,0 +1,23 @@
+package test;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		double km, total;
+		int starting = 10;
+		int min = 20;
+		
+		System.out.print("Gidilecek km'yi yaziniz: ");
+		Scanner input = new Scanner(System.in);
+		km = input.nextDouble();
+		double mesafe = starting +(km*2.20);
+		if(mesafe<20) {
+			mesafe = 20;
+		}
+		System.out.println("Taksimetre Ucreti = " + mesafe);
+		
+		
+	}
+
+}
